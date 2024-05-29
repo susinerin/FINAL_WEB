@@ -32,4 +32,8 @@ function reveal(){
         }
     }
 }
+
+function soldoutalert() {
+    alert("SOLD OUT, BITCH");
+}
   

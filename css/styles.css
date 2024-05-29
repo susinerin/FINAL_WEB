@@ -58,7 +58,7 @@ p {
     align-items: center;
     background-color: rgb(255, 251, 0);
     opacity: 80;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
 
     
@@ -67,16 +67,6 @@ p {
     animation-name: animacion_inicial;
     animation-duration: 3s;
 }
-
-
-
-
-section {
-    height: 100vh;
-
-}
-
-
 
 #menu-desktop {
     top: 0;
@@ -229,8 +219,7 @@ nav ul li a:hover {
 /* SECCIÓN PRODUCTOS  */
 
 #productos {
-    height: 138vh;
-    display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -240,8 +229,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 1em 20px;
 }
 
 .producto {
@@ -275,7 +263,6 @@ nav ul li a:hover {
 #contacto {
     display: flex;
     padding: 5em;
-    height: 50vh;
     
 }
 
@@ -325,21 +312,10 @@ nav ul li a:hover {
 
 @media (max-width: 1500px) {
     
-    section {
-        height: 40vh;
-    }
-
-    #contacto {
-        height: 40vh;
-    }
-
     .contacto form {
         width: 80%;
     }
 
-    #productos {
-        height: 76vh;
-    }
 }
 @media (max-width: 1000px) {
     .container-productos {
@@ -398,9 +374,6 @@ nav ul li a:hover {
         font-size: 0.8em;
     }
 
-    #productos {
-        height: 300vh;
-    }
 
     .producto {
         max-width: 80%;
@@ -417,13 +390,12 @@ nav ul li a:hover {
 
 }
 @media (max-width: 600px) {
-    #productos {
-        height: 185vh;
-    }
 
-    section {
-        height: 54vh;
-    }
+
 }
 
+#carouselFotos {
+    max-width: 80%;
+    margin: 1em auto;
+}
 
