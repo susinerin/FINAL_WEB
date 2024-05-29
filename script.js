@@ -1,15 +1,18 @@
 function myFunction(x) {
+    $("#menu").toggleClass("open");
     x.classList.toggle("change");
-    if($("#menu").position().left <0){
-        $("#menu").animate({
-            left: '0px'
-        });
-    }
-    else{
-        $("#menu").animate({
-            left: '-100vw'
-        });
-    }
+
+    // if($("#menu").position().left <0){
+    //     $("#menu").animate({
+    //         transform: "translateY(0px)"
+    //     });
+    //     console.log("si");
+    // }
+    // else{
+    //     $("#menu").animate({
+    //         left: '-100vw'
+    //     });
+    // }
 
   }
 

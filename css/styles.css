@@ -37,6 +37,7 @@ body {
 }
 
 
+
 h2, h3 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -109,6 +110,10 @@ nav ul li a:hover {
 
 /* MENU - MOBILE  */
 
+#menu.open {
+    transform: translateX(700px);
+}
+
 #menu {
     padding: 3vw 8vw 5vw 3vw;
     height: 100vh;
@@ -116,7 +121,7 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     background-color: rgb(229, 255, 0);
-    left: -110vw;
+    left: -700px;
     z-index: 120;
 
     animation-name: animacion_2;
@@ -362,9 +367,9 @@ nav ul li a:hover {
 
 }
 @media (max-width: 700px) {
-    :hover {
+    /* :hover {
         display: none;
-    }
+    } */
     h3 {
         font-size: 1em;
     }
