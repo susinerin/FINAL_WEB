@@ -37,7 +37,6 @@ body {
 }
 
 
-
 h2, h3 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -94,7 +93,7 @@ nav ul {
 
 nav ul li {
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 50px; 
 }
 
 nav ul li a {
@@ -208,17 +207,45 @@ nav ul li a:hover {
     transition: 0.4s;
   }
   
-  /* Rotate first bar */
+
   .change .bar1 {
     transform: translate(0, 11px) rotate(-90deg);
   }
   
-  /* Fade out the second and third bar */
+
   .change .bar2 {opacity: 0;}
   .change .bar3 {opacity: 0;}
   
 
+/*sección carrusel*/
 
+#carousel{
+    display:flex;
+    flex-flow: column;
+    padding:10em;
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+#carousel, h2{
+    padding-bottom:5em ;
+    display: flex;
+    justify-content: center;
+}
+
+#carousel, #carouselFotos{
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+
+
+    
+} 
+.carousel-inner{
+    display:flex;
+    max-width: 50%;
+
+}
 
 /* SECCIÓN PRODUCTOS  */
 
@@ -403,3 +430,33 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 600px){
+    /*sección carrusel*/
+
+#carousel{
+    display:flex;
+    flex-flow: column;
+    padding:10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#carousel, h2{
+    padding-bottom:2em ;
+}
+
+#carousel, #carouselFotos{
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+
+
+    
+} 
+.carousel-inner{
+    display:flex;
+    max-width: 50%;
+
+}
+
+}
