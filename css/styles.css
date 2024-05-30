@@ -187,7 +187,6 @@ nav ul li a:hover {
 
 }
 /* MENU HAMBURGUESA  */
-
 .container {
     visibility: hidden;
     display: inline-block;
@@ -395,11 +394,11 @@ nav ul li a:hover {
 }
 @media (max-width: 600px) {
 
-
+    #carouselFotos {
+        max-width: 80%;
+        margin: 1em auto;
+    }
+    
 }
 
-#carouselFotos {
-    max-width: 80%;
-    margin: 1em auto;
-}
 
